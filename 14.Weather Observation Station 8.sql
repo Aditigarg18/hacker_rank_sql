@@ -3,4 +3,4 @@
 -- Input Format
 
 -- The STATION table is described as follows:
-select distinct(city) from station where upper(substr(city,1,1))in('a','e','i','o','u')and lower(substr(city,1,1))in('a','e','i','o'.'u');
+select distinct(city) from station where substr(city,1,1)in('A','E','I','O','U')and lower(substr(city,length(city),1))in('a','e','i','o','u');
